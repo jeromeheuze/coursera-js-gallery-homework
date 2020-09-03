@@ -4,7 +4,7 @@ function upDate(previewPic){
 
 	var imageContainer = document.getElementById('image');
 	imageContainer.setAttribute('data-original', imageContainer.innerHTML);
-	imageContainer.style.background = 'url('+previewPic.src+')';
+	imageContainer.style.backgroundImage = 'url('+previewPic.src+')';
 	imageContainer.innerHTML = previewPic.alt;
 
 }
@@ -12,7 +12,7 @@ function upDate(previewPic){
 function unDo(){
 
 	var imageContainer = document.getElementById('image');
-	imageContainer.style.background = 'url()';
+	imageContainer.style.backgroundImage = 'url()';
 	imageContainer.innerHTML = imageContainer.dataset.original;
 	
 }
